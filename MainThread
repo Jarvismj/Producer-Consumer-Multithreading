@@ -1,0 +1,15 @@
+package srctest;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Company comp = new Company();
+		Producer1 p = new Producer1(comp);
+		Consumer1 c = new Consumer1(comp);
+		p.start();
+		c.start();
+		
+	}
+
+}
